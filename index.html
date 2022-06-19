@@ -405,6 +405,37 @@
                     <use href="./images/symbol-modal-defs.svg#close-black"></use>
                 </svg>
             </button>
+            <form class="form">
+                <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+                <div class="form-group">
+                    <label for="name" class="form-label">Имя</label>
+                    <input class="form-input" type="text" name="name" id="name" />
+                </div>
+
+                <div class="form-group">
+                    <label for="tel" class="form-label">Телефон</label>
+                    <input class="form-input" type="tel" name="tel" id="tel" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">Почта</label>
+                    <input class="form-input" type="email" name="email" id="email" />
+                </div>
+
+                <div class="form-group" role="group">
+                    <label for="comment">Комментарий</label>
+                    <textarea class="comment" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input class="form-input" type="checkbox" name="polisy" id="polisy" />
+                    <label class="form-label" for="polisy">Соглашаюсь с рассылкой и принимаю
+                        <a href="">Условия договора</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="button">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
