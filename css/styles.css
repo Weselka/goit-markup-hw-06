@@ -813,18 +813,46 @@ textarea {
 }
 
 .form-group {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
 
-.form-group input {
+.form-group input,
+.form-group textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
 
 .form-group label {
     margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    
+    color: #757575;
+}
+
+.form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+}
+
+.form-input {
+    padding: 12px 42px;
+}
+
+.form-group:focus {
+    /* fill: var(--accent-color); */
+    /* border-color: var(--accent-color); */
+}
+
+.form-group:focus-within > .form-icon {
+    background-color: var(--accent-color);
 }
 
 .form-checkbox {
