@@ -764,9 +764,9 @@ textarea {
     position: absolute;
     top: 10px;
     right: 10px;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30px;
     height: 30px;
     
@@ -781,7 +781,7 @@ textarea {
     border-color: var(--accent-color);
 }
 
-.modal-close:hover > .form-icon {
+.modal-close:hover > .close-icon {
     fill: var(--accent-color);
 }
 
@@ -833,10 +833,8 @@ textarea {
 
 .form-input {
     width: 100%;
-    /* height: 10px; */
     background-color: transparent;
-    padding: 12px 42px; /*
-    /* color: var(--accent-color); - колір курсору*/
+    padding: 12px 42px; 
 }
 
 .form-input:focus,
@@ -895,6 +893,49 @@ textarea {
     
     color: rgba(117, 117, 117, 0.5);
 }
+
+.checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    position: absolute;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.checkbox-icon {
+    /* display: inline-block; */
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid #212121;
+    border-radius: 2px;
+}
+
+.checkbox-link {
+    margin-left: 7px;
+
+    text-decoration-line: underline;
+    color: #2196F3;
+}
+
+.checkbox:checked + .checkbox-icon {
+    background-color: #188CE8;
+    border-color: transparent;
+}
+
+.form-btn {
+    display: flex;
+    justify-content: center;
+}
+
 
 /*-------для списку--------------------------*/
 
