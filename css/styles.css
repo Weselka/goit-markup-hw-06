@@ -842,7 +842,8 @@ textarea {
     cursor: pointer;
 }
 
-.modal-close:hover {
+.modal-close:hover,
+.modal-close:focus {
     border-color: var(--accent-color);
 }
 
@@ -945,14 +946,6 @@ textarea {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.checkbox {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-
-    position: absolute;
-}
-
 .checkbox-label {
     display: flex;
     align-items: center;
@@ -981,3 +974,6 @@ textarea {
     fill: var(--primary-bgc);
 }
 
+.form-checkbox:focus {
+    outline: var(--accent-color);
+}
