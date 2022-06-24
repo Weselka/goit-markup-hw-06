@@ -126,7 +126,7 @@ textarea {
 }
 
 .modal-btn,
-.footer-btn {
+.footer-submit {
     border-radius: 4px;
     border: 1px solid transparent;
 
@@ -587,6 +587,7 @@ textarea {
 
 .footer-soc-info {
     margin-left: 70px;
+    margin-right: 93px;
 }
 
 .footer-soc-item {
@@ -630,6 +631,45 @@ textarea {
 .footer-soc-link:hover,
 .footer-soc-link:focus {
     background-color: var(--accent-color);
+}
+
+.footer-form {
+    width: 100%;
+}
+
+.footer-strong {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.footer-submit {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 10px 29px;
+}
+
+.footer-input {
+    /* width: 358px; */
+    padding: 15px 12px 15px 16px;
+    flex-grow: 1;
+
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.footer-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    letter-spacing: 0.03em;
+    
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /*--------------------Портфоліо---------------------*/
@@ -879,6 +919,12 @@ textarea {
     fill: var(--accent-color);
 }
 
+.form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .modal-btn {
     padding: 10px 55px;
 }
@@ -917,13 +963,12 @@ textarea {
 }
 
 .checkbox-icon {
-    /* display: inline-block; */
     margin-right: 7px;
-    width: 16px;
-    height: 15px;
 
     border: 2px solid var(--primary-text-color);
     border-radius: 2px;
+
+    fill-opacity: 0;
 }
 
 .checkbox-link {
@@ -936,15 +981,7 @@ textarea {
 .checkbox:checked + .checkbox-icon {
     background-color: #188CE8;
     border-color: transparent;
+    fill-opacity: 1;
     fill: var(--primary-bgc);
 }
 
-.footer-strong {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-btn {
-    padding: 10px 29px 10px 29px;
-}
