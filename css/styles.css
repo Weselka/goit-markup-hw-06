@@ -82,7 +82,7 @@ textarea {
 .gallery .link:hover,
 .gallery .link:focus {
     color: var(--accent-color);
-    outline: transparent;
+    /* outline: transparent; */
 }
 
 .section {
