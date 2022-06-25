@@ -902,7 +902,7 @@ textarea {
     position: absolute;
     left: 12px;
     top: 50%;
-    /* transform: translateY(-50%); */
+    transform: translateY(-50%);
 }
 
 .form-input {
@@ -974,6 +974,11 @@ textarea {
     color: var(--accent-color);
 }
 
+.checkbox-icon:focus {
+    outline: transparent;
+    border-color: var(--accent-color);
+}
+
 .checkbox:checked + .checkbox-icon {
     background-color: #188CE8;
     border-color: transparent;
@@ -981,6 +986,4 @@ textarea {
     fill: var(--primary-bgc);
 }
 
-.form-checkbox:focus {
-    outline: var(--accent-color);
-}
+
