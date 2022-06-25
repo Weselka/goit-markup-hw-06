@@ -888,7 +888,7 @@ textarea {
     border-radius: 4px;
 }
 
-.form-group label {
+.form label {
     margin-bottom: 4px;
 
     font-size: 12px;
@@ -974,7 +974,7 @@ textarea {
     color: var(--accent-color);
 }
 
-.checkbox-icon:focus {
+.checkbox-block:focus {
     outline: transparent;
     border-color: var(--accent-color);
 }
