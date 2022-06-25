@@ -150,7 +150,6 @@ textarea {
     background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     outline: transparent;
-    /* border-color: var(--accent-color); */
 }
 
 /*--------------Навігація по сайту--------------*/
@@ -577,6 +576,10 @@ textarea {
     margin-top: 9px;
 }
 
+.footer-site {
+    margin-right: 70px;
+}
+
 .footer-title {
     display: block;
     margin-bottom: 20px;
@@ -590,7 +593,6 @@ textarea {
 }
 
 .footer-soc-info {
-    margin-left: 70px;
     margin-right: 93px;
 }
 
@@ -666,7 +668,7 @@ textarea {
     border-radius: 4px;
 }
 
-.footer-input::placeholder {
+.footer-input {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -825,6 +827,7 @@ textarea {
 
     width: 528px;
     min-height: 581px;
+    padding: 40px;
 
     background-color: var(--primary-bgc);
     box-shadow: var(--card-shadow);
@@ -848,19 +851,19 @@ textarea {
     border-radius: 50%;
 
     cursor: pointer;
+
+    transition: border-color var(--transition), fill var(--transition);
 }
 
 .modal-close:hover,
 .modal-close:focus {
+    outline: transparent;
     border-color: var(--accent-color);
 }
 
-.modal-close:hover > .close-icon {
+.modal-close:hover > .close-icon,
+.modal-close:focus > .close-icon {
     fill: var(--accent-color);
-}
-
-.form {
-    padding: 40px;
 }
 
 .form-title {
@@ -880,7 +883,6 @@ textarea {
 
     display: flex;
     flex-direction: column;
-    margin-top: 4px;
     margin-bottom: 10px;
 }
 
@@ -888,6 +890,10 @@ textarea {
 .form-group textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+}
+
+.form-group.textarea {
+    margin-bottom: 20px;
 }
 
 .form label {
@@ -898,6 +904,11 @@ textarea {
     letter-spacing: 0.01em;
     
     color: var(--title-text-color);
+}
+
+.form-label {
+    display: inline-block;
+    margin-bottom: 4px;
 }
 
 .form-icon {
@@ -911,6 +922,9 @@ textarea {
     width: 100%;
     background-color: transparent;
     padding: 12px 42px; 
+
+    transition: outline var(--transition), 
+    border-color var(--transition);
 }
 
 .form-input:focus,
@@ -927,21 +941,24 @@ textarea {
     fill: var(--accent-color);
 }
 
-.form-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .modal-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px 55px;
 }
+
+.modal-btn:focus
+.modal-btn:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+   
 
 .form-checkbox label{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin: 0;
 
     font-size: 14px;
     line-height: 1.71;
@@ -950,7 +967,12 @@ textarea {
     color: var(--title-text-color);
 }
 
+.form-checkbox {
+    margin-bottom: 30px;
+}
+
 .comment {
+    height: 120px;
     padding: 16px 12px;
 
     font-size: 14px;
@@ -958,10 +980,9 @@ textarea {
     letter-spacing: 0.01em;
     
     color: rgba(117, 117, 117, 0.5);
-}
 
-.checkbox-label {
-    margin-bottom: 30px;
+    transition: outline var(--transition), 
+    border-color var(--transition);
 }
 
 .checkbox-icon {
@@ -971,6 +992,8 @@ textarea {
     border-radius: 2px;
 
     fill-opacity: 0;
+
+    transition: outline var(--transition);
 }
 
 .checkbox-link {
@@ -985,7 +1008,8 @@ textarea {
     fill: var(--primary-bgc);
 }
 
-.checkbox:hover + .checkbox-icon {
+.checkbox:focus + .checkbox-icon {
     outline: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
