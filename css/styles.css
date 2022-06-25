@@ -879,6 +879,7 @@ textarea {
 
     display: flex;
     flex-direction: column;
+    margin-top: 4px;
     margin-bottom: 10px;
 }
 
@@ -935,7 +936,12 @@ textarea {
     padding: 10px 55px;
 }
 
-.form-checkbox {
+.form-checkbox label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -954,9 +960,6 @@ textarea {
 }
 
 .checkbox-label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 30px;
 }
 
@@ -974,11 +977,6 @@ textarea {
     color: var(--accent-color);
 }
 
-.checkbox-block:focus {
-    outline: transparent;
-    border-color: var(--accent-color);
-}
-
 .checkbox:checked + .checkbox-icon {
     background-color: #188CE8;
     border-color: transparent;
@@ -986,4 +984,7 @@ textarea {
     fill: var(--primary-bgc);
 }
 
+.checkbox:hover + .checkbox-icon {
+    outline: var(--accent-color);
+}
 
